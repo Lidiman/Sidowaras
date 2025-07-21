@@ -1,0 +1,127 @@
+main {
+    text-align: center;
+    margin: 50px 0 150px 0;
+}
+
+nav {
+    position: sticky;
+}
+
+main h1 {
+    font-size: 2.2rem;
+    font-family: "DM Serif Display";
+    font-weight: 500;
+    color: #395B40;
+    margin: 50px;
+}
+
+main h2 {
+    color: #fff;
+    background-color: #395B40;
+    padding: 7px 50px;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-family: "DM Serif Display";
+    font-weight: 500;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 150px;
+}
+
+.card {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    height: 50vh;
+    margin: 0 20px;
+}
+
+.card p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-1::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: 
+      linear-gradient(to bottom, transparent, #395b40),
+      url("../../assets/rekomendasi/jogging.webp");
+    background-size: cover;
+    background-position: 0 0, center 55%;
+    z-index: 0;
+}
+
+.card-2::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: 
+      linear-gradient(to bottom, transparent, #395b40),
+      url("../../assets/rekomendasi/bersepeda.webp");
+    background-size: cover;
+    background-position: 0 0, right;
+    z-index: 0;
+}
+
+.card-3::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: 
+      linear-gradient(to bottom, transparent, #395b40),
+      url("../../assets/rekomendasi/senam.webp");
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 0;
+}
+
+.card-1 > * {
+    z-index: 1;
+}
+
+.card-2 > * {
+    z-index: 1;
+}
+
+.card-3 > * {
+    z-index: 1;
+}
+
+.deskripsi {
+    margin: 20px 180px;
+}
+
+main > p, .wrapper {
+    color: #395B40;
+}
+
+.cara h2 {
+    margin: 40px auto;
+}
+
+.cara ul li {
+    list-style: disc;
+    text-align: left;
+}
+
+.cara ul {
+    width: 40%;
+}
+
+.cara .wrapper {
+    display: flex;
+    justify-content: center;
+}
